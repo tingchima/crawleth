@@ -35,35 +35,6 @@ func httpGetBody(url string) (interface{}, error) {
 var incomingURLs = []string{"test1", "test2", "test3"}
 
 func main() {
-	// goroutine test
-	// bank := bank.NewBank(0)
-	// go func() {
-	// 	bank.Deposit(200)
-	// }()
-	// go bank.Deposit(100)
-
-	// time.Sleep(time.Second)
-
-	// bank.Withdraw(100)
-	// fmt.Println(bank.Balance())
-
-	// m := memo.New(httpGetBody)
-	// var wg sync.WaitGroup
-	// for _, url := range incomingURLs {
-	// 	wg.Add(1)
-	// 	go func(url string) {
-	// 		defer wg.Done()
-
-	// 		start := time.Now()
-	// 		value, err := m.Get(url)
-	// 		if err != nil {
-	// 			log.Print(err)
-	// 		}
-	// 		fmt.Printf("%s, %s, %d bytes\n", url, time.Since(start), len(value.([]byte)))
-	// 	}(url)
-	// }
-	// wg.Wait()
-	// =======================================================================================
 	h := handler.NewHandler()
 
 	headerSyncingCtx, headerSyncingCancel := context.WithCancel(context.Background())
