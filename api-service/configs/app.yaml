@@ -1,0 +1,22 @@
+App:
+  LogSavePath: storage/logs
+  LogFileName: app
+  LogFileExt: .log
+  DefaultPageSize: 10
+  MaxPageSize: 30
+
+HttpServer:
+  RunMode: debug
+  Port: 8080
+  ReadTimeout: 5
+  WriteTimeout: 5
+
+Database:
+  Username: root
+  Password: secret
+  Host: "127.0.0.1"
+  Port: 5432
+  DBName: portto
+  Charset: utf8
+  ParseTime: true
+  SSLEnable: false

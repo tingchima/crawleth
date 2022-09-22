@@ -1,0 +1,32 @@
+App:
+  EthSyncingDuration: 20 # 30 sec
+  EthUpdateBlockStatus: 60 # 60 sec
+  EthStableBlockRule: 20 # 20
+  EthCrawlerSize: 250 
+  MaxSyncHeaderSize: 1000
+
+AntsConfig:
+  PoolSize: 1000
+
+Ethereum:
+  RPC: https://data-seed-prebsc-2-s3.binance.org:8545
+  SubscriberDuration: 30 # 30 sec 
+
+Database:
+  Username: root
+  Password: secret
+  Host: "127.0.0.1"
+  Port: 5432
+  DBName: portto
+  Charset: utf8
+  ParseTime: true
+  SSLEnable: false
+
+Redis:
+  Addresses: 
+    - "127.0.0.1:6379"
+  Password:
+  DB: 0
+
+Nats:
+  URL: NatsConfig
